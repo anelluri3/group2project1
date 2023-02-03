@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css" id="csslink">
+	<title>Photo Gallery</title>
+	<script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+	</script>
+</head>
+<body class="galleryAdjustment">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="overview.html">Player Overview</a></li>
+				<li><a href="stats.html">Player's Stats</a></li>
+				<li><a href="gallery.html" class="active">Photo Gallery</a></li>
+			</ul>
+		</nav>
+		<button onclick="toggleCSS()" style="cursor:pointer">Switch Style</button>
+	</header>
+	<main>
+		<h1 style="text-align:center">Here Are Some of the Best Shots From the 2022 NFL Season for These MVP Candidates</h1>
+		
+		<div id="chiefsBackground">
+			<h2 style="text-align:center" class="cursive">Patrick Mahomes</h2>
+				<img src="https://media.gettyimages.com/id/1439659617/photo/patrick-mahomes-of-the-kansas-city-chiefs-runs-in-for-a-two-point-conversion-to-tie-their.jpg?s=612x612&w=0&k=20&c=m2P2Umnmbt26DOQ4VW56qdfvTQ3cjV4h782lstBB-Qo=" alt="rushing">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1424100280/photo/patrick-mahomes-of-the-kansas-city-chiefs-runs-onto-the-field-before-the-game-against-the-los.jpg?s=612x612&w=0&k=20&c=QxPr90QYCSeA-8ZctV2zi4lRfSZc_IgcpjETKO7rL0Y=" alt="smoke">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1458327318/photo/patrick-mahomes-of-the-kansas-city-chiefs-throws-a-pass-against-the-jacksonville-jaguars.jpg?s=612x612&w=0&k=20&c=Bd7F1cFC6FumGwQg0BNbsafvMPv2Dud-eSn2HzAeyYk=" alt="throwing">
+				&nbsp
+				<img src="https://media0.giphy.com/media/GCZ9rKLPqn4iYPwnBz/giphy.gif?cid=ecf05e47imt1rroehmzxjui22mqkkdc5lqvdovb9633066ua&rid=giphy.gif&ct=g" alt="huddle">
+		</div>
+		<div id="bengalsBackground">
+			<h2 style="text-align:center" class="cursive">Joe Burrow</h2>
+				<img src="https://media.gettyimages.com/id/1425033505/photo/joe-burrow-of-the-cincinnati-bengals-passes-the-ball-to-tee-higgins-for-a-touchdown-against.jpg?s=612x612&w=0&k=20&c=-rrexxs0GZwu3XNeqP62MozB1tgwX1Ta9keKD_Tl6lk=" alt="connection">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1432106818/photo/joe-burrow-of-the-cincinnati-bengals-reacts-after-rushing-for-a-touchdown-against-the.jpg?s=612x612&w=0&k=20&c=nFrsnB5IIXgvypMzv2CrgVLtV6e3nyYRxMSgPIMWXBI=" alt="spike">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1458584711/photo/joe-burrow-of-the-cincinnati-bengals-looks-to-throw-a-pass-against-the-buffalo-bills-during.jpg?s=612x612&w=0&k=20&c=_dKeWWehV0Lp774Usb3Jj_vTBGDH8xCrlZdIUodj22U=" alt="snowBurrow">
+				&nbsp
+				<img src="https://media1.giphy.com/media/4SZOwvRVOVfMRsQha1/giphy.gif?cid=ecf05e4795tlo21l9q5dn8ldtqq6xr2jcjw233cq0v0dhrnx&rid=giphy.gif&ct=g" alt="collegeConnection">
+		</div>
+		<div id="vikingsBackground">
+			<h2 style="text-align:center" class="cursive">Justin Jefferson</h2>
+				<img src="https://media.gettyimages.com/id/1441253769/photo/justin-jefferson-of-the-minnesota-vikings-catches-a-pass-in-front-of-cam-lewis-of-the-buffalo.jpg?s=612x612&w=0&k=20&c=XDwI_6sGgDOjIIKFBkugnP0lgZsXFAhWR-U3m8yPWYM=" alt="COTY">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1439570969/photo/justin-jefferson-of-the-minnesota-vikings-catches-a-pass-for-a-touchdown-in-the-first-quarter.jpg?s=612x612&w=0&k=20&c=fZVHA4yMvGOE8Vwx_5vkPNJ615xwe_4D0h7RjM2LX7A=" alt="TD">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1432020351/photo/justin-jefferson-of-the-minnesota-vikings-dives-for-a-conversion-against-jaylon-jones-of-the.jpg?s=612x612&w=0&k=20&c=0OoSxLUoCx3mi9BYwY4dw95-OF8s8JKP47U49YkJtvU=" alt="reach">
+				&nbsp
+				<img src="https://media2.giphy.com/media/44zuwboiEZCXZD58Hv/giphy.gif?cid=ecf05e47dbhvamkkwq0twa40yyuuq9hhli6zp1aglhtlyzk7&rid=giphy.gif&ct=g" alt="Griddy">
+		</div>
+		<div id="eaglesBackground">
+			<h2 style="text-align:center" class="cursive">Jalen Hurts</h2>
+				<img src="https://media.gettyimages.com/id/1429712274/photo/jalen-hurts-of-the-philadelphia-eagles-yells-during-pregame-against-the-jacksonville-jaguars.jpg?s=612x612&w=0&k=20&c=LguWCuxsFRsphvzPlZOyD2m5G8S2mYKZJxGXxKa-GkU=" alt="flex">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1441521528/photo/jalen-hurts-of-the-philadelphia-eagles-celebrates-with-teammate-a-j-brown-after-scoring-a.jpg?s=612x612&w=0&k=20&c=w7A2qp3KN4raK7VOEdDd7_w1sHh4z-KZx-LT6CgIF3w=" alt="newReceiver">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1448384610/photo/jalen-hurts-of-the-philadelphia-eagles-runs-the-ball-for-a-touchdown-during-the-third-quarter.jpg?s=612x612&w=0&k=20&c=nM6TT4U71rVI1PPsWWLKv-ZeU0AXvd9enVLU-BHhlas=" alt="rushingTD">
+				&nbsp
+				<img src="https://media4.giphy.com/media/hzSPLIg1ir0MifokZJ/giphy.gif?cid=ecf05e4747h2oahejbq2kkcmzjrq3dfe98ukb1g1vd4ldckh&rid=giphy.gif&ct=g" alt="entrance">
+		</div>
+		<div id="billsBackground">
+			<h2 style="text-align:center" class="cursive">Josh Allen</h2>
+				<img src="https://media.gettyimages.com/id/1433960229/photo/josh-allen-of-the-buffalo-bills-hurdles-over-justin-reid-of-the-kansas-city-chiefs-during-the.jpg?s=612x612&w=0&k=20&c=A7ep2_91DcKSqu4JGX-tvHDKy4l9aeguiyVLRYTOKww=" alt="hurdle">
+				&nbsp
+				<img src="https://media.gettyimages.com/id/1446144575/photo/quarterback-josh-allen-of-the-buffalo-bills-throws-a-second-quarter-touchdown-pass-in-front.jpg?s=612x612&w=0&k=20&c=44iMjltG_rFdr2AnJ8DbYQfZbaroBkrhGqwFtWaF228=" alt="longBomb">
+				&nbsp
+				<img src="https://pbs.twimg.com/media/Fi8kctAXgAA3F_I.jpg" alt="bigHat" width="400" length="400">
+				&nbsp
+				<img src="https://media4.giphy.com/media/P4ucL514BZmCq5Nmbv/giphy.gif?cid=ecf05e47h8u5dwiz9llwbkbpb46xo6a1sz4j8z7e0i26b55v&rid=giphy.gif&ct=g" alt="celebration">
+		</div>
+		
+	</main>
+</body>
+<footer>
+	&copy; 2023 Alexander McFarland/Abhiram Nelluri (Group 2)
+</footer>
+</html>

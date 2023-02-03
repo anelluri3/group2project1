@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css" id="csslink">
+	<title>Player Overview</title>
+	<script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="overview.html"  class="active">Player Overview</a></li>
+				<li><a href="stats.html">Player's Stats</a></li>
+				<li><a href="gallery.html">Photo Gallery</a></li>
+			</ul>
+		</nav>
+		<button onclick="toggleCSS()" style="cursor:pointer">Switch Style</button>
+	</header>
+	<main>
+		<h1>Player Overview</h1>
+		<h3 id="chiefs">Patrick Mahomes</h3>
+			<p class="overviewP" id="chiefs">
+				Going into the 2022 NFL season, everyone expected Patrick Mahomes’ stats to regress due to him losing top 5 WR Tyreek Hill in the offseason. Mahomes instead went out and put up one of his best statistical seasons in his career so far. Setting an NFL record for the most total yards in a season (5,614 total yards), while also leading the NFL in QBR, and being second in passer rating. Mahomes was able to elevate his own play and elevate his team to a 14-3 record on the season, securing the number 1 seed in the AFC playoffs. Earning 49 out of 50 votes for first-team All-Pro, Mahomes is the favorite to win the MVP award this year. And while he might be the favorite to win MVP he has turned his sights to the NFL playoffs and is trying to lead his team to his second super bowl victory. 
+			</p>
+		<h3 id="bengals">Joe Burrow</h3>
+			<p class="overviewP" id="bengals">
+				Burrow missed almost all of training camp and preseason due to having an emergency appendectomy, which lead to a rocky start for the Bengals. Once Burrow was able to get back into his groove the Bengals rattled off 8 straight wins on their way to a 12-4 finish on the year. Burrow also set the Bengal’s franchise record for touchdown passes in a season with 35. He may not be a favorite to take home the MVP award but there is no hotter team in the NFL going into the playoffs than the Bengal’s. The reigning AFC champions look to defend their crown and head to yet another Superbowl. They have their sights on bringing it home this time around. 
+			</p>
+		<h3 id="vikings">Justin Jefferson</h3>
+			<p class="overviewP" id ="vikings">
+				Justin Jefferson in just his THIRD year in the league put up arguably the greatest season by a receiver in Minnesota Vikings history. Surpassing Randy Moss’s single-season record for receiving yards and Cris Carter’s franchise record for catches. He was the high powered engine behind the Vikings team that finished 13-4 on the season. He was in no doubt the best receiver in the league this season, leading the league in yards and receptions. 
+			</p>
+		<h3 id="eagles">Jalen Hurts</h3>
+			<p class="overviewP" id="eagles">
+				Nobody could’ve predicted the year 3 jump that Jalen Hurts made this year. From having question marks surrounding his future as a starting QB last year, to a bonafide franchise QB and MVP candidate for the Eagles. Part of his large jump from year 2 to year 3 should be attributed to the acquisition of star WR AJ Brown. The duo connected for 1,500 yards and 11 touchdowns. This year Hurts was the youngest QB in NFL history to lead his team to a 13-1 start and was the MVP frontrunner through 14 weeks. Hurts missed two weeks with a shoulder injury and that is why Mahomes has passed him as the favorite for the award. Still this was an amazing season for the dual threat QB and him and his team enter the playoffs as the 1 seed in the NFC
+			</p>
+		<h3 id="bills">Josh Allen</h3>
+			<p class="overviewP" id="bills">
+				Josh Allen started off hotter than anyone else this season before cooling off after suffering a elbow injury halfway through the season. This year Allen became the only QB in NFL history to throw for more than 4,000 yards and 30 touchdowns, while also rushing for more than 700 yards and 7 touchdowns. A legitimate threat when running with the ball, while equipped with a bazooka arm, Allen makes it close to impossible to gameplan for this Bills offense. 
+			</p>
+	</main>
+</body>
+<footer>
+	&copy; 2023 Alexander McFarland/Abhiram Nelluri (Group 2)
+</footer>
+</html>

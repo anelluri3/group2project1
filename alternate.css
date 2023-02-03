@@ -1,0 +1,190 @@
+
+body {
+    background: linear-gradient(gray, white);
+    background-attachment: fixed;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*Adjustments made to fit into the gallery webpage*/
+.galleryAdjustment { 
+  background: black;
+  background-attachment: fixed;
+  color: white;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+/*Adjustments made to fit into the players statistics webpage*/
+.statAdjustment {
+    background: black;
+    background-attachment: fixed;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+/*Placing the switch style button in the top right of the webpage*/
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+	height:50px;
+	length:50px;
+	background-color:gold;
+}
+
+/*USED FOR HEADER FORMATTING */
+
+nav {
+  background-color: white;
+  display: flex; /* This makes the nav a flex container */
+}
+nav ul {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0; /* Removes margins */
+  padding: 0; /* Removes padding */
+  display: flex; /* This makes the ul a flex container */
+}
+nav li {
+  flex: 1; /* This makes the li elements take up equal space within the container */
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: block; /* This makes the a element fill the entire li element */
+  text-align: center; /* This centers the text within the a element */
+
+}
+nav a:hover {
+  color: green;
+}
+nav a.active {
+  color: blue;
+}
+/*END OF HEADER FORMATTING*/
+
+/*USED FOR HYPERLINK FORMATTING*/
+.finalists a:link {
+  color: blue; /* Unvisited links are blue*/
+}
+.finalists a:visited {
+  color: purple; /* Visited links are purple*/
+}
+.finalists a:active {
+  color: red; /* Active links are red*/
+}
+/*END OF HYPERLINK FORMATTING*/
+
+/*FORMATTING FOR THE TABLE ON THE PLAYER'S STATS PAGE*/
+table {
+    border: 1px solid white;
+	border-collapse:collapse;
+	
+}
+td, th {
+    border: 1px solid white;
+    padding: 8px;
+	animation: fadeIn 1s ease-in-out;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+td:nth-child(1) {
+  animation-delay: 0s;
+}
+td:nth-child(2) {
+  animation-delay: 2s;
+}
+td:nth-child(3) {
+  animation-delay: 2s;
+}
+td:nth-child(4) {
+  animation-delay: 2s;
+}
+td:nth-child(5) {
+  animation-delay: 2s;
+}
+td:nth-child(6) {
+  animation-delay: 4s;
+}
+td:nth-child(7) {
+  animation-delay: 4s;
+}
+td:nth-child(8) {
+  animation-delay: 4s;
+}
+td:nth-child(9) {
+  animation-delay: 6s;
+}
+td:nth-child(10) {
+  animation-delay: 6s;
+}
+td:nth-child(11) {
+  animation-delay: 6s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*END OF FORMATTING FOR THE TABLE*/
+
+.overviewP {
+	text-indent: 0px; /*Indenting the paragraphs on the player overview tab*/
+  font-size: 20px;
+  font-style: italic;
+}
+
+.cursive {
+  font-family: cursive; /*Adds cursive font family for gallery tab*/
+  font-size: 100px;
+}
+
+/*TEAM COLORS*/
+#vikings {
+	color: rgb(79, 38, 131)
+}
+#chiefs {
+	color:rgb(227, 24, 55)
+}
+#bengals {
+	color:rgb(251, 79, 20)
+}
+#eagles {
+	color:rgb(0, 76, 84)
+}
+#bills {
+	color:rgb(0, 51, 141)
+}
+#vikingsBackground {
+	background:linear-gradient(to right, rgb(79, 38, 131), rgb(255, 198, 47));
+}
+#chiefsBackground {
+	background:linear-gradient(to right, rgb(227, 24, 55), rgb(255, 184, 28));
+}
+#bengalsBackground {
+	background:linear-gradient(to right, rgb(251, 79, 20), rgb(0, 0, 0));
+}
+#eaglesBackground {
+	background:linear-gradient(to right, rgb(0, 76, 84), rgb(165, 172, 175));
+}
+#billsBackground {
+	background:linear-gradient(to right, rgb(0, 51, 141), rgb(198, 12, 48));
+}
+
+/*END OF TEAM COLORS*/

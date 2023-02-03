@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css" id="csslink">
+	<title>Player's Stats</title>
+	<script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+	</script>
+</head>
+<body class="statAdjustment">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="overview.html">Player Overview</a></li>
+				<li><a href="stats.html" class="active">Player's Stats</a></li>
+				<li><a href="gallery.html">Photo Gallery</a></li>
+			</ul>
+		</nav>
+		<button onclick="toggleCSS()" style="cursor:pointer">Switch Style</button>
+	</header>
+	<main>
+		<table>
+			<caption><h1>Player's Stats</h1></caption>
+			<tr>
+				
+				<th rowspan="2"><h2>Player</h2></th>
+				<th colspan="4"><h2>Passing</h2></th>
+				<th colspan="3"><h2>Rushing</h2></th>
+				<th colspan="3"><h2>Recieving</h2></th>
+				
+			</tr>
+			<tr>
+				<th>Completion %</th>
+				<th>Yards</th>
+				<th>Touchdowns</th>
+				<th>Interceptions</th>
+				<th>Attempts</th>
+				<th>Yards</th>
+				<th>Touchdowns</th>
+				<th>Receptions</th>
+				<th>Yards</th>
+				<th>Touchdowns</th>
+			</tr>
+			<tr>
+				<th>Patrick Mahomes</th>
+				<td>67.1</td>
+				<td>5,250</td>
+				<td>41</td>
+				<td>12</td>
+				<td>61</td>
+				<td>358</td>
+				<td>4</td>
+				<td>1</td>
+				<td>6</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>Joe Burrow</th>
+				<td>68.3</td>
+				<td>4,475</td>
+				<td>35</td>
+				<td>12</td>
+				<td>75</td>
+				<td>257</td>
+				<td>5</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>Justin Jefferson</th>
+				<td>100</td>
+				<td>34</td>
+				<td>0</td>
+				<td>0</td>
+				<td>4</td>
+				<td>24</td>
+				<td>1</td>
+				<td>128</td>
+				<td>1,809</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<th>Jalen Hurts</th>
+				<td>66.5</td>
+				<td>3,701</td>
+				<td>22</td>
+				<td>6</td>
+				<td>165</td>
+				<td>760</td>
+				<td>13</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>Josh Allen</th>
+				<td>63.3</td>
+				<td>4,283</td>
+				<td>35</td>
+				<td>14</td>
+				<td>124</td>
+				<td>762</td>
+				<td>7</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			
+		</table>
+	</main>
+</body>
+<footer>
+	&copy; 2023 Alexander McFarland/Abhiram Nelluri (Group 2)
+</footer>
+</html>
